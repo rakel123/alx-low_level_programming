@@ -1,8 +1,7 @@
 #include "main.h"
 
 /**
- * main - Entry point
- * Description: Printing letters of alphabet in lowecase
+ * print_alphabet - Printing letters of alphabet in lowecase
  * Return: nothing
  */
 
