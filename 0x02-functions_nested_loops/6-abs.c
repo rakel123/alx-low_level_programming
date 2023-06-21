@@ -2,8 +2,8 @@
 
 /**
  * _abs - checks if the number n is positive or negative
- *@n: tests the number to be checked
- *Return: -n if number is less than 0, n if number is positive 
+ *@i: tests the number to be checked
+ *Return: -i if number is less than 0, i if number is positive
  */
 
 int _abs(int i)
@@ -13,7 +13,7 @@ int _abs(int i)
 			return -i;
 		}
 
-		else 
+		else
 		{
 			return i;
 		}
