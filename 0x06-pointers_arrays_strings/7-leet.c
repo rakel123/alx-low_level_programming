@@ -1,25 +1,24 @@
 #include "main.h"
 /**
- * rot13 - change letters to ROT13.
+ * leet - change vowels to numbers.
  * @s: analized string.
  *
- * Return: String with all letters in ROT13 base.
+ * Return: String with all vowels changed.
  */
-char *rot13(char *s)
+char *leet(char *s)
 {
-	char a[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-	char rot[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+	char a[] = "aeotlAEOTL";
+	char n[] = "4307143071";
 	int i = 0;
 	int j;
 
 	while (*(s + i) != '\0')
 	{
-		for (j = 0; j <= 51; j++)
+		for (j = 0; j <= 9; j++)
 		{
 			if (*(s + i) == a[j])
 			{
-				*(s + i) = rot[j];
-				break;
+				*(s + i) = n[j];
 			}
 		}
 		i++;
