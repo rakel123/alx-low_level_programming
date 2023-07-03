@@ -32,6 +32,12 @@ unsigned int _strspn(char *s, char *accept)
 			}
 			z++;
 		}
+
+		if (checker == 0)
+			return (count);
+		i++;
 	}
+	return (count);
 }
+
 
